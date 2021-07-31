@@ -1,0 +1,323 @@
+
+*,
+*:before,
+*:after{
+  box-sizing:border-box;
+}
+
+img.movie{
+  max-width:100%;
+  height:auto;
+}
+table{
+  border-collapse:collapse;
+  border-spacing:0;
+}
+body, figure, article, p, h1, h2, 
+h3, button, img, a, i, article, 
+section, main, footer, ul, li{
+  margin:0;
+  border: none;
+  background: none;
+  list-style: none;
+  text-decoration: none;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+/* Ends of Reset */
+
+/*NavBar*/
+
+#btn-menu{
+  display: none;
+}
+.head
+{
+  color: white;
+   text-align: center;
+   margin-left: 40%;
+}
+label{
+  font-size: 50px;
+  position: fixed;
+  left: 20px;
+  top: -5px;
+  transition: 0.5s;
+  cursor: pointer;
+  color:rgb(255, 255, 255);
+}
+
+.nav-links{
+  list-style:none;
+  background:rgb(119, 215, 185);
+  width:125px;
+  padding-top:55px;
+  padding-left: 10px;
+  position:fixed;
+  height: 100vh;
+  top: 0;
+  left: -180px;
+  transition:0.5s;
+  z-index: 2;
+}
+
+.nav-links a:hover{
+  text-decoration: none;
+}
+
+.nav-links a:hover li{
+  color: blue;
+}
+
+.nav-links li{
+  font-size: 1.2em;
+  line-height: 2em;
+  color:#000;
+  margin-top:20px;
+  text-transform:capitalize;
+  font-family: 'Montserrat', helvetica, sans-serif;
+  text-align:left;
+  cursor:pointer;
+}
+
+#btn-menu:checked + .navbar ul{
+  left: 0;
+}
+#btn-menu:checked + .navbar label{
+  left:170px;
+}
+
+/*End of NavBar*/
+
+body{
+  background-color: rgb(172, 172, 172);
+}
+
+.main-container{
+  /* margin: 0 auto; */
+  padding-top: 40px;
+  /* max-width: 1500px; */
+}
+
+.container{
+  padding: 25px;
+}
+
+/* Card */
+
+.header .date{
+  position: absolute;
+  top: 10px;
+  color: black;
+  background-color: rgb(119, 215, 185);
+  padding: 10px 5px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.menu-content li{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 15px;
+  color: white;
+  text-shadow: blueviolet;
+}
+
+.menu-content button{
+  position: relative;
+  right: 3.5em;
+}
+
+.data {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  transform: translateY(calc(250px + 8em));
+  transition: transform 0.3s;
+}
+
+.data .content {
+  padding: 1em;
+  font-size: 15px;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.text {
+  margin: 0;
+  padding: 0 10px 10px;
+}
+
+.date{
+  font-size: 20px;
+}
+
+.title a{
+  color: black;
+}
+
+.button {
+  display: block;
+  width: 100px;
+  margin: 1em auto 0;
+  text-align: center;
+  font-size: 20px;
+  color: blueviolet;
+  line-height: 1;
+  position: relative;
+  font-weight: 700;
+}
+
+input.search-bar{
+  margin-left: 135px
+}
+
+.movie{
+  width: 350px;
+  margin: 0 auto;
+}
+
+img{
+  height: 400px;
+}
+
+.text-center{
+  height: 70px;
+}
+
+.container .text{
+  height: 70px;
+}
+
+.card-text{
+  height: 210px;
+}
+
+.movie-text{
+  height: 125px;
+}
+
+.content .badge-pill{
+  font-size: 120%;
+  cursor: pointer;
+}
+
+.black{
+  background-color: black;
+  min-height: 98vh;
+}
+
+.About{
+  color: white;
+}
+
+.About img{
+  width: 100px;
+  margin: 0 10vw;
+}
+
+.About h3{
+  width: 80vw;
+  margin: 0 10vw;
+}
+
+.About-heading{
+  margin-top:100px;
+  text-align: center;
+}
+
+.Favorite{
+  color: white;
+}
+
+.display-message{
+  padding: 25px;
+}
+
+.Rating{
+  display: block;
+  margin: 0 auto
+}
+
+@media( max-width: 500px){
+  .movie{
+    width: 80vw;
+  }
+}
+
+/*Discover Styles Page*/
+
+.discover-main-menu{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  position: relative;
+  top: 0;
+  left: 126px;
+  border: 2px solid white;
+  width: 82.5%;
+  padding: 10px 0 10px 10px;
+}
+
+@media (max-width: 1150px){
+  .discover-main-menu{
+    left: 11%;
+    width: 78.5%;
+  }
+}
+
+@media (min-width: 575px){
+  label{
+    top: -10px;
+  }
+
+  .form-inline .form-control{
+    width: 100%;
+  }
+}
+
+.form-inline .form-control{
+  width: 62%;
+}
+
+.form-inline{
+  justify-content: flex-end;
+}
+
+.discover-menu{
+  display: flex;
+  justify-content: space-around;
+}
+
+.years, .sort-by{
+  width: 250px;
+  margin: 10px;
+}
+
+.label{
+  text-align: center;
+  background-color: white;
+}
+
+.genres{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.checkbox{
+  margin: 5px;
+}
+
+.text-center .rate-button{
+  width: 70px;
+  font-size: 100%;
+}
